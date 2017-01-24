@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    
+</head>
+<body>
+    
+    <script type="text/javascript" src="js/toTop.js"></script>
+    <noscript><a href="scrolltotop">Scroll to Top Button</a></noscript>
+
+    <header class="header" onclick="burger()">
+       <ul class="header-ul" >
+           <a><li class="lan-prog"><a href="#Java">Java</li></a>
+           <a><li class="lan-prog"><a href="#Python">Python</li></a>
+           <a><li class="lan-prog"><a href="#JavaScript">JavaScript</li></a>
+           <a><li class="lan-prog"><a href="#Haskell">Haskell</li></a>
+           <a><li class="lan-prog"><a href="#C">C++</li></a>
+       </ul>
+    </header>
+    <div class="articles">
+    <section class="wow fadeInLeft lang" id="Java">
+        <div class="name">Java</div>
+        <div class="text">
+            <p>class Main{</p>
+            <p>    public static void main(String[] args){</p>
+            <p>        System.out.println("Hello, World!");</p>
+            <p>    }</p>
+            <p>}</p>
+        </div>
+    </section>
+    <section class="wow fadeInRight lang" id="Python">
+        <div class="name">Python</div>
+        <div class="text">print('Hello, World!')</div>
+    </section>
+    <section class="wow fadeInLeft lang" id="JavaScript">
+        <div class="name">JavaScript</div>
+        <div class="text">alert("Hello, World");</div>
+    </section>
+    <section class="wow fadeInRight lang" id="Haskell">
+        <div class="name">Haskell</div>
+        <div class="text">main = putStrLn "Hello, World!"</div>
+    </section>
+    <section class="wow fadeInLeft lang" id="C">
+        <div class="name">C++</div>
+        <div class="text">
+        <p>#include "iostream"</p>
+        <p>int main()</p>
+        <p>{</p>
+        <p>    cout >> "Hello, World!";</p>
+        <p>}</p>
+        </div>
+    </section>
+    </div>
+    <footer class="wow slideInUp">
+        <ul class="footer">
+            <li><a href="https://vk.com/id154374401"><img src="img/vk.jpg" alt=""></a></li>
+            <li id="copyright">© 2015-2016 ЧМШ</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </footer>
+</body>
+</html>

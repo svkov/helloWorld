@@ -1,0 +1,274 @@
+@a-background: rgb(0,0,0);
+@b-background: rgb(43,43,43);
+@c-background: rgb(64,64,64);
+@font-background: rgb(52, 221, 78);
+@border-background: rgb(38, 127, 1);
+
+//full-screen
+.for_burger{
+        display: block;
+}
+body{
+    width:95%;
+    background:@a-background;
+    color: @font-background;
+}
+#topcontrol:hover{
+    height:10%;
+}
+header{
+    animation-name: header;
+    animation-duration: 1.5s;
+    ul{
+        position:fixed;
+        top:20px;
+        left:33.5%;
+        display: inline-block;
+        a{
+                text-decoration: none;
+                color: @font-background;
+        }
+        .lan-prog{
+            background: @b-background;
+            border: 10px solid @border-background;
+            padding:10px 10px 10px 10px;
+            font-size: 20px;
+            float: left; 
+            list-style: none;
+        }
+        
+        .lan-prog:hover{
+            background:@c-background;
+        }
+    }
+}
+
+@keyframes header{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.articles{
+    width: 70%;
+    font-size: 200%;
+    margin: 150px 15% 20px 15%;
+    display: block;
+    .lang{
+        background: @c-background;
+        border: 10px solid @border-background;
+        margin: 50px 50px 50px 50px;
+        margin-left: 50px;
+    }
+    
+    .name{
+        margin:0px 0px 20px 0px;
+        padding:20px 25% 20px 45%;
+        background: @b-background;
+    }
+    
+    .text{
+        padding: 0.5% 20% 0.5% 20%;
+    }
+    
+    #Java{
+        
+    }
+    
+    #Python{
+        
+    }
+    
+    #JavaScript{
+        
+    }
+    
+    #Haskell{
+        
+    }
+    
+    #C{
+        
+    }
+    
+}
+
+.footer{
+    background: @b-background;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    list-style: none;
+    bottom: 0px;
+    display: inline-block;
+    li{
+        position: relative;
+        float: left;
+        top: 25%;
+        left: 40%;
+        right: 10%;
+    }
+    #copyright{
+        margin-top: 45px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+@media screen and(max-width: 1250px){
+    header{
+        ul{
+            left: 27.5%;
+        }
+    }
+    footer{
+        li{
+            left: 30%
+        }
+    }
+}
+
+/*//1000px
+@media screen and(max-width: 1000px){
+    header{
+    ul{
+        top:20px;
+        left:20%;
+        a{
+                text-decoration: none;
+                color: @font-background;
+        }
+        .lan-prog{
+            
+            background: @b-background;
+            border: 10px solid @border-background;
+            padding:10px 10px 10px 10px;
+            font-size: 20px;
+            float: left; 
+            list-style: none;
+        }
+        
+        .lan-prog:hover{
+            background:@c-background;
+        }
+    }
+}
+    ul{
+        display: none;
+        left:16%;
+        width:50%;
+        height:50%;
+        .lan-prog{
+            padding:10px 10px 10px 10px;
+            font-size: 15px;
+        }
+    }
+
+
+
+
+.articles{
+    
+    width: 80%;
+    font-size: 30px;
+    margin: 10% 20px 20px 20px;
+    padding: 0 5% 0 5%;
+    .lang{
+        margin: 10% 10% 10% 10%;
+    }
+    
+    .name{
+        margin:0px 0px 20px 0px;
+        padding:20px 10% 20px 50%;
+        background: @b-background;
+    }
+    
+}
+
+.footer{
+    background: @b-background;
+    width: 100%;
+    height: 100px;
+    li{
+        top: 25%;
+        left: 35%;
+    }
+    #copyright{
+        margin-top: 45px;
+    }
+}
+
+}
+*/
+
+//960px
+@media screen and (max-width: 1000px){
+header{
+    font-size: 200%;
+    &:before{
+        content: "Menu";
+        background: @a-background;
+        position: fixed;
+        left: 40%;
+        top: 20px;
+        border: 3px solid @border-background;
+    }
+    ul{
+        display: none;
+        left:20%;
+        width:50%;
+        height:50%;
+        .lan-prog{
+            padding:10px 10px 10px 10px;
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+.articles{
+    
+    width: 80%;
+    font-size: 170%;
+    margin: 10% 20px 20px 20px;
+    padding: 0 5% 0 5%;
+    .lang{
+        margin: 10% 10% 10% 10%;
+    }
+    
+    .name{
+        margin:0px 0px 20px 0px;
+        padding:20px 50% 20px 40%;
+        background: @b-background;
+    }
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
